@@ -25,7 +25,9 @@ export default function ProgressBar({
   return (
     <div className="progress-bar" >
       <span className="filler-text">{percentage.toFixed(2)} %</span>
-      <div className="filler" style={{ width: `${width}%` }} />
+      <div className={`filler ${percentage >= 100 ? 'red' : ''}`}
+        style={{ width: `${width}%` }}
+      />
     </div>
   )
 }

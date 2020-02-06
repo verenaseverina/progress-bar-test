@@ -1,0 +1,38 @@
+@import '../../variables';
+
+.progress-bar {
+  position: relative;
+  height: 20px;
+  width: 100%;
+  border: 1px solid #b1aeae;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid grey;
+  border-radius: 15px;
+  display: block;
+  margin: 15px auto;
+  width: 100%;
+  font-size: 13px;
+  font-weight: bold;
+  -webkit-transition: all .3s ease;
+  .filler {
+    top: 0;
+    background: $light-green;
+    height: 100%;
+    border-radius: inherit;
+    transition: width .2s ease-in;
+    position: absolute;
+  }
+  .filler-text {
+    z-index: 1;
+    color: $white;
+    top: 0;
+    height: 100%;
+    border-radius: inherit;
+    transition: width .2s ease-in;
+    position: absolute;
+  }
+  .red {
+    background-color: $red-darken;
+  }
+}

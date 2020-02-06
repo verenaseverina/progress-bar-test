@@ -1,0 +1,15 @@
+@import '../../variables';
+
+.card {
+	background: $black-gradient;
+	border-radius: 15px;
+	max-width: 350px;
+	position: relative;
+  overflow: hidden;
+  padding: 30px;
+  h2 {
+    color: $white;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
